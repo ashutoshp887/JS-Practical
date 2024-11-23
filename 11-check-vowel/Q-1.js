@@ -16,7 +16,7 @@
 
 
 
-
+//1st Method
 
 function ashu(input){
     input= input.toLowerCase();
@@ -35,6 +35,31 @@ else if(consonant.includes(input[i])){
 }
 }
 return {count,count1}
+}
+
+console.log(ashu("Hi I am World best software engineer"))
+
+
+
+//2nd Method 
+
+function ashu(input1){
+    input1= input1.toLowerCase();
+    input1 = input1.replace(/ /g,'')
+    console.log(input1)
+    let vowel='aeiou'
+    let consonant ="bcdfghjklmnpqrstvwxyz"
+    let count2 =0;
+    let count3=0;
+for(i=0;i<=input1.length;i++){
+if(vowel.includes(input1[i])){
+   count2++
+}
+else if(/^[a-z]$/.test(input1[i])){
+    count3++
+}
+}
+return {count2,count3}
 }
 
 console.log(ashu("Hi I am World best software engineer"))
